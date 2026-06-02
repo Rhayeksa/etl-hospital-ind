@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  minio:
+    image: minio/minio:${MINIO_IMAGE_VERSION:-latest}
+    ports:
+      - "${MINIO_API_PORT:-9000}:9000" # API S3
+      - "${MINIO_CONSOLE_PORT:-9001}:9001" # Console UI
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:-minioAdmin}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:-minioAdmin}
+    command: server /data --console-address ":9001"
