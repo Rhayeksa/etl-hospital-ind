@@ -4,8 +4,6 @@ services:
     hostname: metabase
     volumes:
       - /dev/urandom:/dev/random:ro
-      - ./plugins:/plugins
-      - ./data:/data
     ports:
       - "${METABASE_PORT:-3000}:3000"
     environment:
