@@ -219,3 +219,6 @@ __marimo__/
 
 # Metabase
 sample-database.db.mv.db
+
+# DrawIO
+doc/*.bkp
