@@ -1,0 +1,5 @@
+{
+  "MINIO_ENPOINT": "172.17.0.1:9000",
+  "MINIO_ACCESS_KEY": "minioAdmin",
+  "MINIO_SECRET_KEY": "minioAdmin"
+}
