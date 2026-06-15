@@ -222,3 +222,7 @@ sample-database.db.mv.db
 
 # DrawIO
 doc/*.bkp
+
+# Airflow
+airflow/config
+airflow/logs
