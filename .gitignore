@@ -226,3 +226,6 @@ doc/*.bkp
 # Airflow
 airflow/config
 airflow/logs
+
+# Other
+/lab.py
